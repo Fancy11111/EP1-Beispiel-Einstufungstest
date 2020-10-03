@@ -29,8 +29,8 @@ public class Main {
      */
     static int myMult(int x, int y) {
         int sum = 0;
-        int mult = Math.min(x, y);
-        int factor = Math.max(x, y);
+        int mult = x < y ? x : y;
+        int factor = x > y ? x : y;
         for(int i = 0; i < mult; i++){
             sum += factor;
         }
